@@ -35,6 +35,12 @@ body {
   margin-left: 55px;
 }
 
+.blox:first-child,
+.blox:nth-child(2),
+.blox:last-child {
+  position: relative;
+}
+
 .blox:first-child {
   background-color: hsl(0, 70%, 40%);
 }
@@ -45,4 +51,36 @@ body {
 
 .blox:last-child {
   background-color: hsl(240, 50%, 50%);
+}
+
+.inner_block {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.top,
+.right,
+.left,
+.bottom {
+  position: absolute;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.top {
+  top: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.bottom {
+  bottom: 0;
 }
