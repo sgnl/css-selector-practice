@@ -45,9 +45,6 @@ $(function() {
   var modalClose = $('<p>');
   modalClose.html('Click anywhere to close this pop-up.');
 
-
-
-
   // add to DOM
   modalContainer.append(modalHeader.hide());
   modalContainer.append(modalBody.hide());

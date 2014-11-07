@@ -43,6 +43,7 @@ body {
 .css_selector_container input {
   height: 50px;
   font-size: 50px;
+  padding: 5px 0;
 }
 
 .selected {
