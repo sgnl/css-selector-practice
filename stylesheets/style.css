@@ -46,7 +46,7 @@ body {
 }
 
 .selected {
-  background-color: hsl(120, 100%, 50%);
+  background-color: hsl(120, 100%, 50%) !important;
 }
 
 .blox_container {
