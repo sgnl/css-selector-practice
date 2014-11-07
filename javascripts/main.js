@@ -40,7 +40,7 @@ $(function() {
   });
 
   var modalBody = $('<p>');
-  modalBody.html('Type in a <span>CSS</span> selector that want to use in the <span>INPUT</span> box pinned to the top of the page. Press <span>ENTER</span> to <span>Execute</span> it. You can use the <span>DOWN ARROW</span> to <span>clear</span> the input box.');
+  modalBody.html('Type in a <span>CSS</span> selector that want to use in the <span>INPUT</span> box pinned to the top of the page. Press <span>ENTER</span> to <span>execute</span> it. You can use the <span>DOWN ARROW</span> to <span>clear</span> the input box. If successful, the selected element will get a <span>GREEN BACKGROUND COLOR</span>.');
 
   var modalClose = $('<p>');
   modalClose.html('Click anywhere to close this pop-up.');
