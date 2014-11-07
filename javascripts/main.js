@@ -24,4 +24,48 @@ $(function() {
     last_selected.removeClass('selected');
   });
 
+  // instructions modal
+  var modalParent = $('<div>', {
+    class: 'modal'
+  });
+
+  var modalContainer = $('<div>', {
+    class: 'modalContainer'
+  });
+
+  var modalHeader = $('<h1>', {
+    text: "Instructions"
+  });
+
+  var modalBody = $('<p>');
+  modalBody.html('Type in a <span>CSS</span> selector that want to use in the <span>INPUT</span> box pinned to the top of the page. Press <span>ENTER</span> to <span>Execute</span> it. You can use the <span>DOWN ARROW</span> to <span>clear</span> the input box.');
+
+  var modalClose = $('<p>');
+  modalClose.html('Click anywhere to close this pop-up.');
+
+
+
+
+  // add to DOM
+  modalContainer.append(modalHeader.hide());
+  modalContainer.append(modalBody.hide());
+  modalContainer.append(modalClose.hide());
+  modalParent.append(modalContainer.hide());
+  $('body').append(modalParent);
+
+  // fancy
+  modalContainer.slideDown('slow');
+  modalHeader.fadeIn('slow');
+  modalBody.fadeIn('slow');
+  modalClose.fadeIn('slow');
+
+  // add Event to remove Modal
+  var closeModalClicks = -1;
+  $('body').on('click', '.modal', function() {
+    closeModalClicks++;
+    if (closeModalClicks >= 1) {
+      $('.modal').fadeOut();
+    }
+  });
+
 }); // ends ready();
