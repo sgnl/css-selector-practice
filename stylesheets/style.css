@@ -1,0 +1,48 @@
+body {
+  background-color: hsl(0, 0%, 0%);
+  color: #fff;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.css_selector_container {
+  position: fixed;
+  top: 0;
+  right: 50px;
+}
+
+.css_selector_container input {
+  height: 50px;
+  font-size: 50px;
+}
+
+.selected {
+  background-color: hsl(120, 100%, 50%);
+}
+
+.blox_container {
+  width: 960px;
+  height: 350px;
+  padding: 55px 0 0 0;
+  background-color: hsl(0, 39%, 7%);
+  margin: 0 auto;
+  clear: both;
+}
+
+.blox {
+  width: 250px;
+  height: 300px;
+  float: left;
+  margin-left: 55px;
+}
+
+.blox:first-child {
+  background-color: hsl(0, 70%, 40%);
+}
+
+.blox:nth-child(2) {
+  background-color: hsl(160, 50%, 50%);
+}
+
+.blox:last-child {
+  background-color: hsl(240, 50%, 50%);
+}
