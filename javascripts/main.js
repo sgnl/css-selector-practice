@@ -10,24 +10,14 @@ $(function() {
     var code = e.keyCode || e.which;
 
     // reset the playing field
-    clearButton.trigger('click');
+    $('.selected').each(function (e) {
+      $(this).removeClass('selected');
+    });
 
     // 'enter' key applies .selected to elements
     if (code === 13) {
       $(selector.val()).addClass('selected');
     }
-    // 'down arrow' triggers clearButton
-    if (code === 40) {
-      clearButton.trigger('click');
-    }
-  });
-
-  // clear button
-  clearButton.on('click', function (e){
-    e.preventDefault();
-    $('.selected').each(function (e) {
-      $(this).removeClass('selected');
-    });
   });
 
   // instructions modal
