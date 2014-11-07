@@ -18,7 +18,7 @@ body {
   width: 50%;
   height: 300px;
   padding: 20px;
-  background-color: hsl(120, 30%, 40%);
+  background-color: hsl(650, 50%, 20%);
   margin: 0 auto;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -31,7 +31,7 @@ body {
 }
 
 .modalContainer p span {
-  color: pink;
+  color: hsl(700, 50%, 80%);
 }
 
 .css_selector_container {
