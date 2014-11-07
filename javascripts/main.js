@@ -7,6 +7,10 @@ $(function() {
   selector.on('keyup', function(e) {
     // console.log(e.keyCode);
     var code = e.keyCode || e.which;
+
+    // reset the playing field
+    clearButton.trigger('click');
+
     // 'enter' key applies .selected to elements
     if (code === 13) {
       $(selector.val()).addClass('selected');
