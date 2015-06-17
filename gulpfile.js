@@ -5,5 +5,5 @@ gulp.task('default', function () {
     console.log('default task');
     return gulp.src('./javascripts/main.js')
         .pipe(obfuscate())
-        .pipe(gulp.dest('./javascripts'))s/main;
+        .pipe(gulp.dest('./javascripts'));
 });
